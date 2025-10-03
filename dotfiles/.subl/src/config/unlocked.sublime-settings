@@ -1,0 +1,85 @@
+{
+	"load_count":
+	[
+		"Helload World!",
+		"Load 10 times!",
+		"Load 100 times!",
+		"Load 300 times!",
+		"Load 500 times!",
+		"Load 1000 times!",
+		"Load 10000 times!",
+	],
+	"unlocked_titles":
+	[
+		"load_count",
+		"view_achievement_count",
+		"new_file_count",
+		"save_count",
+		"filename",
+		"easter_egg",
+		"selector_count",
+		"file_type",
+		"clone_file_count",
+	],
+	"view_achievement_count":
+	[
+		"Checking!",
+		"View achievements 10 times!",
+	],
+	"new_file_count":
+	[
+		"Hello World!",
+		"Create new file 10 times!",
+		"Create new file 100 times!",
+		"Create new file 300 times!",
+		"Create new file 500 times!",
+		"Create new file 1000 times!",
+		"Create new file 10000 times!",
+	],
+	"save_count":
+	[
+		"Hello Save World!",
+		"Save 10 times!",
+		"Save 100 times!",
+		"Save 300 times!",
+		"Save 500 times!",
+		"Save 1000 times!",
+		"Save 10000 times!",
+		"Save 100000 times!",
+	],
+	"filename":
+	[
+		"new file contains 'hoge' in filename",
+		"new file contains 'fuga' in filename",
+		"new file contains 'piyo' in filename",
+		"new file contains 'foo' in filename",
+		"new file contains 'bar' in filename",
+		"new file contains 'baz' in filename",
+		"new file contains 'xyzzy' in filename",
+	],
+	"easter_egg":
+	[
+		"Eyes are bad? (Font size greater than 50)"
+	],
+	"selector_count":
+	[
+		"multi selector!",
+		"select 15 place one time",
+		"select 30 place one time",
+		"select 50 place one time",
+		"select 100 place one time",
+		"THE SELECTOR",
+	],
+	"file_type":
+	[
+		"Multilingual (Use 10 kinds of language syntax)",
+		"Multibilingual (Use 20 kinds of language syntax)",
+		"Multitrilingual (Use 30 kinds of language syntax)",
+		"Multiquadrilingual (Use 40 kinds of language syntax)",
+		"THE TRANSLATOR (Over 50 language syntaxes used)",
+	],
+	"clone_file_count":
+	[
+		"Duplicate Window!"
+	],
+}

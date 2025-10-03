@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Sublime]
+@="Open with &Sublime"
+"Icon"="D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Sublime\command]
+@="\"D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime]
+@="Open with &Sublime"
+"Icon"="D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime\command]
+@="\"D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime]
+@="Open with &Sublime"
+"Icon"="D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime\command]
+@="\"D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\\shell\open\command]
+@="D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe \"%1\""
+

@@ -1,0 +1,27 @@
+{
+    "selector":"text.html.basic",
+    "variants":
+    [
+        {
+            "name": "Open in Firefox",
+            "cmd": ["${file}"],
+            "shell": true,
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "working_dir": "${file_path}",
+        },
+        {
+            "name": "Open in Opera",
+            "cmd": ["start", "opera", /*"${file_path}*/ "${file}"],
+            "shell": true,
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "working_dir": "${file_path}",
+        },
+        {
+            "name": "Run htmllint",
+            "cmd": ["npx", "htmllint", "init", "&", "npx", "htmllint", "${file}", "&", "del", ".htmllintrc"],
+            "shell": true,
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "working_dir": "${file_path}",
+        },
+    ],
+}

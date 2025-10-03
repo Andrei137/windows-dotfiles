@@ -1,0 +1,42 @@
+[
+    {
+        "action": "write",
+        "params": [
+            {
+                "source": "src\\packages",
+                "destination": "D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\Data\\Installed Packages"
+            },
+            {
+                "source": "src\\local",
+                "destination": "D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\Data\\Local"
+            },
+            {
+                "source": "src\\config",
+                "destination": "D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\Data\\Packages\\User"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "WAKATIME_HOME",
+                "value": "D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\wakatime",
+                "default": "%USERPROFILE%"
+            }
+        ],
+    },
+    {
+        "action": "regedit",
+        "params": {
+            "name": "Sublime",
+            "exe": "D:\\Programming\\Manager\\scoop\\apps\\sublime-text\\current\\sublime_text.exe",
+            "flags": {
+                "register_app": "\\\"%1\\\"",
+                "file": "\\\"%1\\\"",
+                "folder": "\\\"%1\\\"",
+                "empty_space": "\\\"%V\\\""
+            }
+        }
+    }
+]

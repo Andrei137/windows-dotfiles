@@ -1,0 +1,32 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src",
+                "destination": "D:\\Programming\\Shell\\wezterm"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "WEZTERM_CONFIG_FILE",
+                "value": "D:\\Programming\\Shell\\wezterm\\config.lua",
+                "default": "%USERPROFILE%\\.config\\wezterm\\wezterm.lua"
+            }
+        ]
+    },
+    {
+        "action": "regedit",
+        "params": {
+            "name": "Wezterm",
+            "exe": "D:\\Programming\\Manager\\scoop\\apps\\wezterm\\current\\wezterm-gui.exe",
+            "flags": {
+                "folder": "start --cwd \\\"%v\\\"",
+                "empty_space": "start --cwd \\\"%v\\\""
+            }
+        }
+    }
+]

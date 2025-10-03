@@ -1,0 +1,17 @@
+// Settings in here override those in "LSP-pyright/LSP-pyright.sublime-settings"
+{
+    "disabled_capabilities":
+    {
+        "completionProvider": true,
+        "signatureHelpProvider": {
+          "triggerCharacters": true,
+          "retriggerCharacters": true,
+      },
+    },
+    "enabled": true,
+    "settings": {
+        "python.analysis.diagnosticSeverityOverrides": {
+            "reportMissingImports": "none",
+        },
+    },
+}

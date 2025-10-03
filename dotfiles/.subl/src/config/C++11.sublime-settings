@@ -1,0 +1,7 @@
+{
+	"extensions": ["C", "H", "CPP"],
+	"ignored_packages":
+	[
+		"C++"
+	],
+}

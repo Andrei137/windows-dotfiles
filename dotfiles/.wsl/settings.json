@@ -1,0 +1,11 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\config.txt",
+                "destination": "%USERPROFILE%\\.wslconfig"
+            }
+        ]
+    }
+]

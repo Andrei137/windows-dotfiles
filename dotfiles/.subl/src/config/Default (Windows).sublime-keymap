@@ -1,0 +1,257 @@
+[
+    {
+        "keys": ["shift+tab"],
+        "command": "open_terminal"
+    },
+    {
+        "keys": ["ctrl+t"],
+        "command": "build",
+        "args": {"variant": "WSL"}
+    },
+    {
+        "keys": ["ctrl+shift+s"],
+        "command": "auto_save",
+        "args": {
+            "all_files": false
+        }
+    },
+    {
+        "keys": ["alt+z"],
+        "command": "scb_undo_tab"
+    },
+    {
+        "keys": ["ctrl+tab"],
+        "command": "next_view"
+    },
+    {
+        "keys": ["ctrl+shift+tab"],
+        "command": "prev_view"
+    },
+    {
+        "keys": ["ctrl+shift+n"],
+        "command": "quick_create_file"
+    },
+    {
+        "keys": ["ctrl+shift+m"],
+        "command": "quick_create_directory"
+    },
+    {
+        "keys": ["ctrl+shift+o"],
+        "command": "quick_file_move"
+    },
+    {
+        "keys": ["ctrl+alt+enter"], "command": "send_code",
+        "context": [
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "source"
+            }
+        ]
+    },
+    {
+        "keys": ["ctrl+alt+t"],
+        "command": "terminus_open",
+        "args": {
+          "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+        "keys": ["ctrl+alt+q"],
+        "command": "toggle_record_macro"
+    },
+    {
+        "keys": ["ctrl+q"],
+        "command": "astyleformat"
+    },
+    {
+        "keys": ["tab"],
+        "command": "auto_complete",
+        "args": {
+            "mini": true,
+            "default": "\t"
+        },
+        "context":
+            [
+              { "key": "auto_complete_visible", "operand": false },
+              { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+              { "key": "setting.tab_completion", "operator": "equal", "operand": true },
+              { "key": "preceding_text", "operator": "regex_match", "operand": ".*\\w", "match_all": false }
+            ]
+    },
+    { "keys": ["ctrl+alt+r"], "command": "rest_request" },
+    { "keys": ["ctrl+w"], "command": "terminus_close", "context": [{ "key": "terminus_view"}] },
+    { "keys": ["ctrl+n"], "command": "new_file", "context": [{ "key": "terminus_view"}] },
+    { "keys": ["alt+r"], "command" : "refresh_folder_list" },
+    { "keys": ["ctrl+y"], "command": "redo" },
+    { "keys": ["ctrl+shift+z"], "command": "redo_or_repeat" },
+    { "keys": ["f4"], "command": "lsp_show_diagnostics_panel",
+        "context":
+        [
+            {
+                "key": "setting.lsp_active"
+            }
+        ]
+    },
+    { "keys": ["f10"], "command": "distraction_free_window" },
+    { "keys": ["ctrl+f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
+    { "keys": ["alt+enter"], "command": "copilot_accept_completion",
+        "context":
+        [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+    { "keys": ["tab"], "command": "copilot_reject_completion",
+        "context":
+        [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+    {
+        "keys": ["alt+backspace"],
+        "command": "copilot_ask_completions",
+        "context": [
+            {
+                "key": "copilot.is_authorized"
+            }
+        ]
+    },
+    { "keys": ["ctrl+alt+c"], "command": "convert_to_snake"},
+    { "keys": ["ctrl+alt+s"], "command": "convert_to_camel"},
+    { "keys": ["f7"], "command": "gdb_toggle_breakpoint" },
+    { "keys": ["alt+w"], "command": "quick_rulers", "args": {"show_current": false} },
+    { "keys": ["f4"], "command": "gdb_step_over",
+        "context":
+        [
+            {"key": "gdb_running", "operator": "equal", "operand": true},
+            {"key": "gdb_disassembly_view", "operand": false}
+        ]
+
+    },
+    {
+        "command": "gdb_step_into",
+        "context": [
+            {
+                "key": "gdb_running",
+                "operator": "equal",
+                "operand": true
+            }
+        ],
+        "keys": ["f2"]
+    },
+    {
+        "command": "gdb_step_out",
+        "context": [
+            {
+                "key": "gdb_running",
+                "operator": "equal",
+                "operand": true
+            }
+        ],
+        "keys": ["shift+f1"]
+    },
+    {
+        "keys": ["f11"],
+        "command": "toggle_full_screen"
+    },
+    {
+        "keys": ["ctrl+space"],
+        "command": "auto_complete"
+    },
+    {
+        "keys": ["ctrl+space"],
+        "command": "replace_completion_with_auto_complete",
+        "context":
+        [
+            {
+                "key": "last_command",
+                "operator": "equal",
+                "operand": "insert_best_completion"
+            },
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": false
+            },
+            {
+                "key": "setting.tab_completion",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "keys": ["ctrl+2"],
+        "command": "set_setting",
+        "args": {
+            "setting": "tab_size",
+            "value": 2
+        }
+    },
+    {
+        "keys": ["ctrl+4"],
+        "command": "set_setting",
+        "args": {
+            "setting": "tab_size",
+            "value": 4
+        }
+    },
+    {
+        "keys": ["ctrl+alt+f"],
+        "command": "js_prettier"
+    },
+    {
+        "keys": ["ctrl+q"],
+        "command": "single_selection"
+    },
+    /*
+    {
+        "keys": ["ctrl+shift+alt+e"],
+        "command": "emmet_expand_abbreviation",
+        "args": {
+            "tab": true
+        },
+        "context": [
+            {
+                "key": "emmet_abbreviation"
+            },
+            {
+                "key": "emmet_tab_expand"
+            },
+            {
+                "key": "num_selections",
+                "operand": 1
+            }
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+alt+e"],
+        "command": "emmet_expand_abbreviation",
+        "context": [
+            {
+                "key": "emmet_activation_scope"
+            },
+            {
+                "key": "emmet_multicursor_tab_expand"
+            },
+            {
+                "key": "num_selections",
+                "operator": "not_equal",
+                "operand": 1
+            }
+        ]
+    },
+    {
+        "keys": ["ctrl+alt+r"],
+        "command": "terminus_open",
+        "args" : {
+            "cmd": ["C:\\Windows\\system32\\wsl.exe" ],
+            "cwd": "${file_path:${folder}}"
+        }
+    }
+    */
+]

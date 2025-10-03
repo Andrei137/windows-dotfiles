@@ -1,0 +1,14 @@
+{
+    "debug": false,
+    "auto_format_on_save_excludes": [
+        "*/node_modules/*",
+        "*.json"
+    ],
+    "allow_inline_formatting": false,
+    "use_local_babel": true,
+    "prettier_options": {
+        "jsxSingleQuote": true,
+        "parser": "babel",
+        "singleQuote": true
+    }
+}

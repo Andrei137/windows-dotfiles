@@ -1,0 +1,21 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src",
+                "destination": "D:\\Programming\\Shell\\starship"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "STARSHIP_CONFIG",
+                "value": "D:\\Programming\\Shell\\starship\\config.toml",
+                "default": "%USERPROFILE%\\.config\\starship.toml"
+            }
+        ]
+    }
+]

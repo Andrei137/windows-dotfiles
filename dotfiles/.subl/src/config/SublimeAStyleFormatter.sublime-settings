@@ -1,0 +1,12 @@
+{
+    "autoformat_on_save": false,
+    "options_default": 
+    {
+        "style": "allman",
+        "fill-empty-lines": true,
+        "indent-classes": false,
+        "indent-labels": true,
+        "indent-modifiers": false,
+        "indent-preproc-define": true,
+    },
+}

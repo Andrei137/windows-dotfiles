@@ -1,0 +1,18 @@
+{
+    "selector": "source.java",
+    "variants": [
+        {
+            "name": "Build",
+            "cmd": ["javac", "-sourcepath", ".", "*.java"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Delete .class files",
+            "cmd": ["del", "*.class"],
+            "shell": true,
+            "working_dir": "$file_path"
+        }
+    ]
+}

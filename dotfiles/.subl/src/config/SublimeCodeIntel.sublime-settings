@@ -1,0 +1,19 @@
+{
+   "codeintel": true,
+   "codeintel_enabled_languages":
+    [
+       // "SCSS", "Ruby", "Python3", "XML", "Sass", "HTML5", "Perl", "CSS", "Twig", "Less", "Node.js", "TemplateToolkit", "PHP"
+    ],
+    "codeintel_live": false,
+    "codeintel_tooltips": "status",
+    "Python3": {
+            "python3": "/usr/local/bin/python3.3",
+            "codeintel_scan_extra_dir": [
+                "/Applications/Sublime Text.app/Contents/MacOS",
+                "~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
+                "~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
+            ],
+            "codeintel_scan_files_in_project": false,
+            "codeintel_selected_catalogs": []
+        },
+}

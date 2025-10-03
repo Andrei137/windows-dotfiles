@@ -1,0 +1,21 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src",
+                "destination": "D:\\Programming\\Shell\\winfetch"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+           {
+                "name": "WINFETCH_CONFIG_PATH",
+                "value": "D:\\Programming\\Shell\\winfetch\\config.ps1",
+                "default": "%USERPROFILE%\\.config\\winfetch\\config.ps1"
+            }
+        ]
+    }
+]

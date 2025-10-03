@@ -1,0 +1,20 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\config.json",
+                "destination": "%USERPROFILE%\\.config\\scoop\\config.json"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "SCOOP",
+                "value": "D:\\Programming\\Manager\\scoop"
+            }
+        ]
+    }
+]

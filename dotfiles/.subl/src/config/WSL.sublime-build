@@ -1,0 +1,11 @@
+{
+    "selector": "source",
+    "variants": [
+        {
+            "name": "WSL",
+            // "shell_cmd": "powershell -Command \"Start-Process pwsh -ArgumentList '-Command', 'wsl'\"",
+            "shell_cmd": "powershell -Command \"Start-Process wezterm-gui -ArgumentList 'start', '--cwd', '.', '--', 'wsl.exe'\"",
+            "shell": true,
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+command_timeout = 1000
+format = """$directory$time$all"""
+add_newline = true
+
+[cmd_duration]
+min_time = 5000
+format = "underwent [$duration](bold yellow)"
+
+[directory]
+format = "[❮PWSH❯](#06969A)$path "
+
+[time]
+disabled = false
+time_format = "%R"
+
+[character]
+success_symbol = "[❯](bold #06969A)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold $06969A)"
+
+[nix_shell]
+impure_msg = "devbox "
+format = "via [$state](bold blue) "
+
+[hostname]
+disabled = true
+
+[username]
+disabled = false
+format = "as [$user](bold red) "
+
+[git_status]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[package]
+disabled = true
+
+[lua]
+disabled = true
+
+[dart]
+disabled = true

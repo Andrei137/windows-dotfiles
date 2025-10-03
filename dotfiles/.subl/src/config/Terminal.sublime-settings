@@ -1,0 +1,9 @@
+{
+  // "terminal": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+  "terminal": "D:\\Programming\\Manager\\scoop\\shims\\wezterm-gui.exe",
+  "parameters": [
+    "start",
+    "--cwd",
+    "."
+  ]
+}
