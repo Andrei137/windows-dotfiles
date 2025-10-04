@@ -30,7 +30,7 @@ function global:cd {
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # scoop
-Add-Content -Path $Profile -Value "`nImport-Module $env:SCOOP\modules\scoop-completion"
+Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
 
 # syntax highlighting
 function global:Enable-SyntaxHighlighting {
@@ -53,110 +53,3 @@ if (Test-Path $functionsPath) {
     }
 }
 
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
-
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
