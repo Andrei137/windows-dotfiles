@@ -7,7 +7,6 @@ local function add_to_path(folder)
 end
 add_to_path("core");
 add_to_path("plugins");
-add_to_path("utils");
 
 local config = wezterm.config_builder()
 require("startup").apply(wezterm, config)

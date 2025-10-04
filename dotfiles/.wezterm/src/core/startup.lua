@@ -1,10 +1,11 @@
-local utils = require("utils")
-
 local M = {}
 
 function M.apply(wezterm, config)
   wezterm.on('gui-startup', function(cmd)
-    require("utils").startup(wezterm.mux, cmd)
+    local position = 120
+    local tab, pane, window = wezterm.mux.spawn_window(cmd or
+      { position={ x=position,y=position } }
+    )
   end)
 
   -- Domains

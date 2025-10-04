@@ -1,6 +1,40 @@
-local utils = require("utils")
-
 local M = {}
+
+local function get_details(pane)
+  local cwd_str = tostring(pane:get_current_working_dir()) or nil
+  local proc = pane:get_foreground_process_name() or ""
+  local is_wsl = proc:lower():find("wslhost.exe")
+
+  return cwd_str, is_wsl
+end
+
+local function get_cwd(cwd_str, is_wsl)
+  local cwd
+  if not cwd_str then
+    cwd = is_wsl and "~" or nil
+  elseif is_wsl then
+    cwd = cwd_str:gsub("^file://[^/]+", "")
+    cwd = cwd ~= "" and cwd or "~"
+  else
+    cwd = cwd_str:gsub("^file:///", "")
+    cwd = cwd ~= "" and cwd or nil
+  end
+
+  return cwd
+end
+
+local function keep_domain(pane)
+  local cwd_str, is_wsl = get_details(pane)
+
+  return is_wsl and { DomainName = "WSL:Ubuntu" } or "DefaultDomain", get_cwd(cwd_str, is_wsl)
+end
+
+local function reverse_domain(pane)
+  local cwd_str, is_wsl = get_details(pane)
+
+  return is_wsl and "DefaultDomain" or { DomainName = "WSL:Ubuntu" }, get_cwd(cwd_str, is_wsl)
+end
+
 
 function M.apply(wezterm, config)
   local act = wezterm.action
@@ -8,7 +42,7 @@ function M.apply(wezterm, config)
   -- New leader
   config.leader = {
     key = "x",
-    mods = "CTRL",
+    mods = "ALT",
     timeout_milliseconds = 2000
   }
   -- Keybinds
@@ -33,7 +67,7 @@ function M.apply(wezterm, config)
       key = "-",
       mods = "LEADER",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.keep_domain(pane)
+        local domain, cwd = keep_domain(pane)
         win:perform_action(act.SplitVertical { domain = domain, cwd = cwd }, pane)
       end),
     },
@@ -42,7 +76,7 @@ function M.apply(wezterm, config)
       key = "-",
       mods = "LEADER|ALT",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.reverse_domain(pane)
+        local domain, cwd = reverse_domain(pane)
         win:perform_action(act.SplitVertical { domain = domain, cwd = cwd }, pane)
       end),
     },
@@ -51,7 +85,7 @@ function M.apply(wezterm, config)
       key = "\\",
       mods = "LEADER",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.keep_domain(pane)
+        local domain, cwd = keep_domain(pane)
         win:perform_action(act.SplitHorizontal { domain = domain, cwd = cwd }, pane)
       end),
     },
@@ -60,7 +94,7 @@ function M.apply(wezterm, config)
       key = "\\",
       mods = "LEADER|ALT",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.reverse_domain(pane)
+        local domain, cwd = reverse_domain(pane)
         win:perform_action(act.SplitHorizontal { domain = domain, cwd = cwd }, pane)
       end),
     },
@@ -69,7 +103,7 @@ function M.apply(wezterm, config)
       key = "c",
       mods = "LEADER",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.keep_domain(pane)
+        local domain, cwd = keep_domain(pane)
         win:perform_action(act.SpawnCommandInNewTab { domain = domain, cwd = cwd }, pane)
       end),
     },
@@ -78,7 +112,7 @@ function M.apply(wezterm, config)
       key = "c",
       mods = "LEADER|ALT",
       action = wezterm.action_callback(function(win, pane)
-        local domain, cwd = utils.reverse_domain(pane)
+        local domain, cwd = reverse_domain(pane)
         win:perform_action(act.SpawnCommandInNewTab { domain = domain, cwd = cwd }, pane)
       end),
     },
