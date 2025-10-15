@@ -1,43 +1,42 @@
+$DOTFILES = "D:\Programming\Config\dotfiles"
+
 # starship
-function global:__lazy_starship {
-    Remove-Item function:\prompt -Force -ErrorAction SilentlyContinue
-    Invoke-Expression (& starship init powershell)
-    & $function:prompt
+$starshipCache = "$DOTFILES\.starship\src\cache.ps1"
+if (-not (Test-Path $starshipCache)) {
+    starship init powershell | Out-File -Encoding utf8 $starshipCache
 }
-Set-Item function:\prompt { __lazy_starship }
+
+function global:__init_starship {
+    Remove-Item function:\prompt -Force -ErrorAction SilentlyContinue
+    . $starshipCache
+    & $function:prompt
+    return ''
+}
+function global:prompt { __init_starship }
 
 # OSC 7 for wezterm
-$prompt = ""
-function Invoke-Starship-PreCommand {
+function global:Invoke-Starship-PreCommand {
     $current_location = $executionContext.SessionState.Path.CurrentLocation
     if ($current_location.Provider.Name -eq "FileSystem") {
         $ansi_escape = [char]27
         $provider_path = $current_location.ProviderPath -replace "\\", "/"
         $prompt = "$ansi_escape]7;file://${env:COMPUTERNAME}/${provider_path}$ansi_escape\"
+        $host.ui.Write($prompt)
     }
-    $host.ui.Write($prompt)
 }
 
 # zoxide
-Remove-Item Alias:cd -Force -ErrorAction SilentlyContinue
-function global:cd {
-    Remove-Item function:\cd -Force -ErrorAction SilentlyContinue
+if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
-    cd @args
 }
 
 # fzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
-
-# scoop
-Import-Module D:\Programming\Manager\scoop\modules\scoop-completion
+if (Get-Command Set-PsFzfOption -ErrorAction SilentlyContinue) {
+    Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+}
 
 # syntax highlighting
-function global:Enable-SyntaxHighlighting {
-    Remove-Item function:\Enable-SyntaxHighlighting -Force -ErrorAction SilentlyContinue
-    Import-Module syntax-highlighting -ErrorAction SilentlyContinue
-}
-Enable-SyntaxHighlighting
+Import-Module syntax-highlighting -ErrorAction SilentlyContinue
 
 # aliases
 Set-Alias -Name s -Value subl
@@ -46,10 +45,11 @@ Set-Alias -Name s -Value subl
 Set-PSReadLineKeyHandler -Key Alt+Backspace -Function BackwardKillWord
 
 # functions
-$functionsPath = "D:\Programming\Config\dotfiles\.pwsh\src\functions"
-if (Test-Path $functionsPath) {
-    Get-ChildItem -Path $functionsPath -Filter *.ps1 | ForEach-Object {
-        . $_.FullName
-    }
+$FUNCTIONS_PATH = "$DOTFILES\.pwsh\src\functions"
+$pwshCache = "$FUNCTIONS_PATH\cache.ps1"
+if ((-not (Test-Path $pwshCache)) -or
+    ((Get-ChildItem -Path $FUNCTIONS_PATH -Filter *.ps1).LastWriteTime -gt (Get-Item $pwshCache).LastWriteTime)) {
+    Get-ChildItem -Path $FUNCTIONS_PATH -Filter *.ps1 |
+        Get-Content | Out-File -Encoding utf8 $pwshCache
 }
-
+. $pwshCache

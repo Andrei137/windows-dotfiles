@@ -1,3 +1,5 @@
 dotfiles/.sublime/src/config/WakaTime.sublime-settings
 dotfiles/.sublime/src/config/SyncSettings.sublime-settings
 dotfiles/.sublime/src/local/License.sublime_license
+dotfiles/.pwsh/src/functions/cache.ps1
+dotfiles/.starship/src/cache.ps1
