@@ -124,11 +124,10 @@ workspaces:
     display_name: "Firefox"
     keep_alive: true
   - name: '2'
-    display_name: "Sublime"
-    keep_alive: true
-  - name: '3'
     display_name: "Terminal"
     keep_alive: true
+  - name: '3'
+    display_name: "Sublime"
   - name: '4'
     display_name: "Personal"
   - name: '5'
@@ -167,11 +166,11 @@ window_rules:
 
   - commands: ["move --workspace 2"]
     match:
-      - window_process: { regex: "sublime_text" }
+      - window_process: { regex: "wezterm" }
 
   - commands: ["move --workspace 3"]
     match:
-      - window_process: { regex: "wezterm" }
+      - window_process: { regex: "sublime_text" }
 
   - commands: ["move --workspace 4"]
     match:
