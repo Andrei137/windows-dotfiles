@@ -16,7 +16,7 @@ time_format = "%R"
 [character]
 success_symbol = "[❯](bold #06969A)"
 error_symbol = "[❯](bold red)"
-vimcmd_symbol = "[❮](bold $06969A)"
+vimcmd_symbol = "[❮](bold #06969A)"
 
 [nix_shell]
 impure_msg = "devbox "
@@ -48,4 +48,7 @@ disabled = true
 disabled = true
 
 [dart]
+disabled = true
+
+[ruby]
 disabled = true
