@@ -4,7 +4,7 @@ function wsl: {
 }
 
 function xsrv {
-    Start-Process "D:\Programming\Shell\wsl\VcXsrv\xsrv.lnk"
+    vcxsrv :0 -multiwindow -ac -wgl
 }
 
 function zsh {
@@ -14,6 +14,15 @@ function zsh {
     )
 
     wsl zsh -ic $Command
+}
+
+function nvim {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$FilePath
+    )
+
+    wsl zsh -ic "nvim '$FilePath'"
 }
 
 function which {
