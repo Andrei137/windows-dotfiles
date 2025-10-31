@@ -126,8 +126,14 @@ function M.apply(wezterm, config)
 			end),
 		},
 		{
-			-- Fullscreen active tab
+			-- Toggle fullscreen
 			key = "f",
+			mods = "LEADER",
+			action = act.ToggleFullScreen,
+		},
+		{
+			-- Fullscreen active tab
+			key = "z",
 			mods = "LEADER",
 			action = act.TogglePaneZoomState,
 		},

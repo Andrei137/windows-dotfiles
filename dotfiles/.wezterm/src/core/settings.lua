@@ -22,7 +22,7 @@ function M.apply(wezterm, config)
   config.tab_max_width = 32
 
   -- Background
-  config.window_background_opacity = 0.9
+  config.window_background_opacity = 1.0
   config.window_decorations = "NONE | RESIZE"
   config.window_frame = {
     font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Regular" }),
