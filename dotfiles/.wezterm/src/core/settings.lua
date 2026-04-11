@@ -55,7 +55,7 @@ function M.apply(wezterm, config)
   config.hide_tab_bar_if_only_one_tab = true
 
   -- Cursor
-  config.default_cursor_style = "BlinkingBar"
+  config.default_cursor_style = "BlinkingBlock"
   config.cursor_thickness = 2
   config.cursor_blink_rate = 500
 end

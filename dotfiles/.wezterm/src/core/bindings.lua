@@ -35,13 +35,11 @@ end
 
 local function keep_domain(pane)
 	local cwd_str, is_wsl = get_details(pane)
-
 	return is_wsl and { DomainName = "WSL:Ubuntu" } or "DefaultDomain", get_cwd(cwd_str, is_wsl)
 end
 
 local function reverse_domain(pane)
 	local cwd_str, is_wsl = get_details(pane)
-
 	return is_wsl and "DefaultDomain" or { DomainName = "WSL:Ubuntu" }, get_cwd(cwd_str, is_wsl)
 end
 

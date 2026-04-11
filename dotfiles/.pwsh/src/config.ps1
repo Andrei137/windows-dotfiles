@@ -1,6 +1,7 @@
+$env:PSModulePath = "C:\Users\Andrei\Documents\PowerShell\Modules"
 $DOTFILES = "D:\Programming\Config\dotfiles"
 
-$EnableProfileTiming = $true
+$EnableProfileTiming = $false
 if ($EnableProfileTiming) {
     $start = Get-Date
     $prev = $start

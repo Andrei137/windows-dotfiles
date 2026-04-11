@@ -22,6 +22,7 @@ function M.apply(wezterm, config)
 
 	-- Domains
 	config.default_prog = { "pwsh.exe", "-NoLogo" }
+	-- config.default_prog = { "wsl.exe", "~" }
 	config.wsl_domains = {
 		{
 			name = "WSL:Ubuntu",
