@@ -1,0 +1,21 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src",
+                "destination": "D:\\Programming\\Manager\\glazewm"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "GLAZEWM_CONFIG_PATH",
+                "value": "D:\\Programming\\Manager\\glazewm\\config.yaml",
+                "default": "%USERPROFILE%\\.glzr\\glazewm\\config.yaml"
+            }
+        ]
+    }
+]
