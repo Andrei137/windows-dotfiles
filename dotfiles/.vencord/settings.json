@@ -1,0 +1,15 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\settings",
+                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Vencord\\settings"
+            },
+            {
+                "source": "src\\themes",
+                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Vencord\\themes"
+            }
+        ]
+    }
+]

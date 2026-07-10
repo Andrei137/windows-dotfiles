@@ -1,0 +1,6 @@
+// These settings override both User and Default settings for the JSON (Sublime) syntax
+{
+    "distractionless.toggle_after": 1,
+    "distractionless.toggle_minimap": false,
+    "distractionless.toggle_sidebar": true,
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\config.ps1",
+                "destination": "%USERPROFILE%\\Documents\\PowerShell\\Microsoft.PowerShell_profile.ps1"
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "action": "sync",
+    "params": [
+        {
+            "type": "regedit",
+            "source": "IDM.reg",
+            "destination": "HKEY_CURRENT_USER\\Software\\DownloadManager"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "selector": "source.c++",
+    "variants": [
+        {
+            "name": "Build with C++20 (GNU) - Single",
+            "cmd": ["g++", "-std=gnu++2a", "-o", "${file_path}/${file_base_name}", "${file}", "-O2", "-Wall", "-Weffc++", "-Werror", "-Wextra", "-Wshadow", "-Wnon-virtual-dtor", "-Wno-int-in-bool-context", "-pedantic"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Build with C++20 (GNU) - Single (Warnings)",
+            "cmd": ["g++", "-std=gnu++2a", "-o", "${file_path}/${file_base_name}", "${file}", "-O2", "-Wall", "-Weffc++", "-Wextra", "-Wshadow", "-Wnon-virtual-dtor", "-Wno-int-in-bool-context", "-pedantic"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Build with C++20 (GNU) - Multiple",
+            "cmd": ["g++", "-std=gnu++2a", "-o", "${file_path}/${file_base_name}", "*.cpp", "-O2", "-Wall", "-Weffc++", "-Werror", "-Wextra", "-Wshadow", "-Wnon-virtual-dtor", "-Wno-int-in-bool-context", "-pedantic"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Remove .exe files",
+            "cmd": ["del", "*.exe"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        /*
+        {
+            "name": "Build with SFML",
+            "cmd": ["g++", "-std=c++11", "-IC:/Mingw/SFML-2.5.1/include", "-LC:/Mingw/SFML-2.5.1/lib", "-o", "${file_base_name}.exe", "${file}", "-lsfml-graphics", "-lsfml-window", "-lsfml-system"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Build with Glfw & Glad",
+            "cmd": ["g++", "${file}", "C:/Mingw/glad/src/glad.c", "-LC:/Mingw/glfw/lib-mingw-w64", "-IC:/Mingw/glfw/include", "-IC:/Mingw/glad/include", "-o", "${file_base_name}.exe", "-lglfw3"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Copy CMakeLists",
+            "cmd": ["copy", "D:\\Programming\\Cpp\\CMakeLists.txt"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell": true,
+            "working_dir": "$file_path"
+        },
+        {
+            "name": "Run with C++11",
+            "cmd": ["g++", "-std=c++11", "-o",  "${file_path}/${file_base_name}", "${file}", "-O2"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell":true,
+            "working_dir":"$file_path"
+        },
+        {
+            "name": "Run with C++14",
+            "cmd": ["g++", "-std=c++14", "-o", "${file_path}/${file_base_name}", "${file}", "-O2"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell":true,
+            "working_dir":"$file_path"
+        },
+        {
+            "name": "Run with C++17",
+            "cmd": ["g++", "-std=c++17", "-o", "${file_path}/${file_base_name}", "${file}", "-O2"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell":true,
+            "working_dir":"$file_path"
+        },
+        {
+            "name": "Build with C++20",
+            "cmd": ["g++", "-std=c++2a", "-o", "${file_path}/${file_base_name}", "${file}", "-O2"],
+            "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+            "shell":true,
+            "working_dir":"$file_path"
+        }
+        */
+    ]
+}

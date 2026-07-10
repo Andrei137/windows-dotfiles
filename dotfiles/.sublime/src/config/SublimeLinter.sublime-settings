@@ -1,0 +1,71 @@
+// SublimeLinter Settings - User
+{
+    "delay": 0.01,
+    "linters":
+    {
+        "g++":
+        {
+            "disable": false,
+            "args":
+            [
+                "-Wall",
+                "-Wno-int-in-bool-context",
+                "-std=gnu++2a",
+                "-O2",
+                "-Werror",
+                "-Weffc++",
+                "-Wextra",
+                "-Wshadow",
+                "-Wnon-virtual-dtor",
+                "-pedantic"
+            ],
+            "I":
+            [
+                "${file_path}/include",
+                "${file_path}",
+                "${folder}/include",
+                "/usr/local/include"
+            ],
+            "enable": "style",
+        },
+        "pycodestyle":
+        {
+            "executable": ["pipx"],
+            "args":
+            [
+                "run",
+                "flake8",
+                "--max-line-length=99",
+            ],
+        },
+        "htmlhint":
+        {
+            "executable": ["pnpx", "htmlhint", "*.html"],
+        },
+        "csslint":
+        {
+            "selector": "source.css",
+            "executable": ["pnpx", "csslint", "--ignore=ids"]
+        },
+        "stylelint":
+        {
+            "selector": "source.css",
+            "executable": ["pnpx", "stylelint", "--config", "D:/Programming/DevTools/linter/.stylelintrc.json"],
+        },
+        "jshint":
+        {
+            "selector": "source.jsx",
+            "executable": ["pnpx", "jshint", "--config", "D:/Programming/DevTools/linter/config.jshintrc"],
+        },
+        "eslint": {
+            "selector": "source.jsx",
+            "executable": ["pnpx", "eslint", "--config", "D:/Programming/DevTools/linter/eslint.config.js"],
+        }
+    },
+    "styles" :
+    [
+        {
+            "mark_style": "none"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\automation.json",
+                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LenovoLegionToolkit\\automation.json"
+            },
+            {
+                "source": "src\\settings.json",
+                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LenovoLegionToolkit\\settings.json"
+            }
+        ]
+    }
+]

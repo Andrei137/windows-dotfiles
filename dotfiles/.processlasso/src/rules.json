@@ -1,0 +1,51 @@
+{
+ "$id": "https://bitsum.com/json-schemas/2026-01-17-00/processlasso.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "cpuModel": "Intel(R) Core(TM) Ultra 9 275HX",
+ "description": "Rulesets for Process Lasso",
+ "gpuAdapterPreferenceRuleOrder": [
+  "c:\\windows\\system32\\driverstore\\filerepository\\nvlt.inf_amd64_138f16e1d7ecfcb8\\display.nvcontainer\\nvdisplay.container.exe",
+  "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayermini64.exe",
+  "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayer64.exe",
+  "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayer64.exe",
+  "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayermini64.exe",
+  "d:\\games\\singleplayer\\stellar blade\\sb\\binaries\\win64\\sb-win64-shipping.exe",
+  "d:\\games\\launchers\\steam\\steam.exe",
+  "d:\\utils\\winget\\steam\\steamapps\\common\\helldivers 2\\bin\\helldivers2.exe"
+ ],
+ "ruleSets": [
+  {
+   "gpuAdapterPreference": "Power saving",
+   "processName": "c:\\windows\\system32\\driverstore\\filerepository\\nvlt.inf_amd64_138f16e1d7ecfcb8\\display.nvcontainer\\nvdisplay.container.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\games\\launchers\\steam\\steam.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\games\\singleplayer\\stellar blade\\sb\\binaries\\win64\\sb-win64-shipping.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayer64.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayermini64.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayer64.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayermini64.exe"
+  },
+  {
+   "gpuAdapterPreference": "High performance",
+   "processName": "d:\\utils\\winget\\steam\\steamapps\\common\\helldivers 2\\bin\\helldivers2.exe"
+  }
+ ],
+ "title": "Process Lasso Rules"
+}

@@ -1,0 +1,55 @@
+{
+  "Theme": "System",
+  "AccentColor": null,
+  "AccentColorSource": "System",
+  "PowerModeMappingMode": "WindowsPowerMode",
+  "PowerPlans": {},
+  "PowerModes": {
+    "Performance": "BestPerformance",
+    "Quiet": "BestPowerEfficiency"
+  },
+  "MinimizeToTray": true,
+  "MinimizeOnClose": true,
+  "WindowSize": {
+    "Width": 1150.0,
+    "Height": 750.0
+  },
+  "DontShowNotifications": false,
+  "NotificationPosition": "BottomCenter",
+  "NotificationDuration": "Normal",
+  "NotificationOnAllScreens": false,
+  "Notifications": {
+    "UpdateAvailable": true,
+    "CapsNumLock": false,
+    "FnLock": false,
+    "TouchpadLock": true,
+    "KeyboardBacklight": true,
+    "CameraLock": true,
+    "Microphone": true,
+    "PowerMode": false,
+    "RefreshRate": true,
+    "ACAdapter": false,
+    "SmartKey": false,
+    "AutomationNotification": true
+  },
+  "TemperatureUnit": "C",
+  "ExcludedRefreshRates": [
+    {
+      "Frequency": 75
+    },
+    {
+      "Frequency": 100
+    },
+    {
+      "Frequency": 120
+    }
+  ],
+  "WarrantyInfo": null,
+  "SmartKeySinglePressActionId": null,
+  "SmartKeyDoublePressActionId": null,
+  "SmartKeySinglePressActionList": [],
+  "SmartKeyDoublePressActionList": [],
+  "SynchronizeBrightnessToAllPowerPlans": false,
+  "SmartFnLockFlags": "None",
+  "ResetBatteryOnSinceTimerOnReboot": false
+}

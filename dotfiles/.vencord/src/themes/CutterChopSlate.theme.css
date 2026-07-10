@@ -1,0 +1,305 @@
+//META{"name":"CutterChop's Maintained Slate Theme","description":"CutterChop Personal Dark Theme","author":"Bayleaf154#3070","version":"2.4"}*//{}
+
+@import url(https://github.com/Bayleaf154/DiscordThemes/blob/main/Slate.theme.css);
+
+.theme-dark,
+.theme-light,
+:root {
+  --hover-animation-speed: 0.35s;
+  --seperator-color: var(--background-accent);
+  --background-primary: #141414 !important;
+  --background-secondary: #111111 !important;
+  --background-secondary-alt: #292929 !important;
+  --background-tertiary: #0c0c0c !important;
+  --background-accent: #242424 !important;
+  --background-floating: black !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.01) !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.03) !important;
+  --background-modifier-selected: rgba(255, 255, 255, 0.04) !important;
+  --background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;
+  --channeltextarea-background: var(--background-accent) !important;
+  --deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;
+  --deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;
+  --deprecated-text-input-border-disabled: var(
+    --background-tertiary
+  ) !important;
+  --activity-card-background: var(--background-primary) !important;
+  --channels-default: #9f9f9f !important;
+  --text-muted: #b6b6b6 !important;
+  --text-normal: #fbfbfb !important;
+  --interactive-normal: rgba(59, 253, 26, 0.8) !important;
+  --interactive-hover: #3bfd1a !important;
+  --interactive-active: #fff !important;
+  --interactive-muted: #747474 !important;
+  --header-secondary: #c9c9c9 !important;
+  --toast-background: var(--background-primary) !important;
+  --toast-header: var(--background-tertiary) !important;
+  --toast-contents: var(--background-secondary) !important;
+  --toast-box-shadow: rgba(0, 0, 0, 0.2) !important;
+  --toast-border: var(--background-tertiary) !important;
+  --offline-color: rgb(60, 60, 60) !important;
+  --text-link: #3bfd1a !important;
+}
+
+/* Changes color of mentions normal and hover */
+.wrapper-3WhCwL, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+  background-color: rgba(114, 218, 145, 0.1);
+  color: #3bfd1a;
+}
+
+.wrapperHover-1GktnT:hover {
+  background-color: rgba(59, 253, 26, 0.3);
+  color: #fff;
+}
+
+/* Changes color of mentions normal and hover */
+.wrapper-3WhCwL {
+  background-color: rgba(114, 218, 145, 0.1);
+  color: #3bfd1a;
+}
+
+.wrapperHover-1GktnT:hover {
+  background-color: rgba(59, 253, 26, 0.3);
+  color: #fff;
+}
+
+/* Recent mentions page */
+.header-ykumBX {
+  background-color: #131415;
+}
+
+.messagesPopoutWrap-1MQ1bW {
+  background-color: #19191b;
+  border: 1px solid rgb(39, 39, 40);
+}
+
+/* Mention menu load more messages */
+.hasMoreButton-1MELpI {
+  background: #131415;
+  border-color: #272728;
+}
+
+/* Uploaded file name color */
+.fileNameLink-9GuxCo, .container-1r6BKw, .container-1r6BKw, .attachButtonPlus-jWVFah {
+  color: #3bfd1a !important;
+}
+
+/* New message warning box */
+.newMessagesBar-mujexs {
+  background-color: rgb(19, 20, 21);
+}
+
+/* Color of area of container at channels */
+.container-2Thooq,
+.theme-light .container-2Thooq,
+.theme-dark .menu-Sp6bN1,
+.theme-dark.contextMenu-HLZMGh,
+.theme-dark .ui-standard-sidebar-view .content-region,
+.theme-dark .select-2TCrqx .Select-menu-outer,
+.theme-dark .noChannel-Z1DQK7,
+.theme-dark .headerBar-UHpsPw {
+  background: #19191b;
+}
+
+/* Changes color of all links*/
+.topic-2QX7LI a,
+.theme-dark .markup-2BOw-j a,
+.theme-dark .embedTitleLink-1Zla9e,
+theme-dark .anchor-3Z-8Bb,
+theme-dark a {
+  color: #3bfd1a !important;
+}
+
+/* Changes color of video progress bar */
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl:after,
+.mediaBarProgress-1xaPtl:before {
+  background-color: rgba(59, 253, 26, 0.5);
+}
+
+/* Changes color of media progression grabber */
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
+  background-color: #3bfd1a;
+}
+
+/* Changes color of mp3 files */
+.anchor-3Z-8Bb {
+  color: #3bfd1a;
+}
+
+/* Noise Suppression Button Hider*/
+[aria-label="Noise Suppression powered by Krisp"] {
+  display: none;
+}
+
+/* Help Button Hider*/
+:not(.threadSidebar-1o3BTy) > * > .toolbar-1t6TWx .iconWrapper-2OrFZ1:last-child {
+  display: none;
+}
+
+.barButtonMain-3K-jeJ,
+.barButtonAlt-mYL1lj {
+  background-color: rgb(39, 39, 40);
+}
+
+.activityPanel-28dQGo {
+  display: none;
+}
+/* Autocomplete Emotes */
+.autocompleteInner-zh20B_ {
+  padding-bottom: 2px;
+  background-color: #111111;
+}
+/* Friendslist */
+.peopleColumn-29fq28 {
+  background-color: #141414;
+}
+/* radial buttons settings */
+.item-26Dhrx {
+  border-color: #212121;
+  background-color: #212121;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91,
+.selected-mKYnfr.option-n0icdO {
+  background-color: #212121;
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+  background-color: #424242;
+}
+/* sliders */
+.barFill-23-gu- {
+  background-color: rgba(59, 253, 26, 0.8);
+}
+.wrapper-3jrx9n {
+  border: 2px solid rgba(59, 253, 26, 1);
+}
+.item-26Dhrx[style*="background"] {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129)"] {
+  background-color: rgba(59, 253, 26, 1) !important;
+}
+
+.powercord-spotify .spotify-seek-bar {
+  background-color: #212121;
+}
+
+/* remove stickers */
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] {
+  height: auto !important;
+  width: auto !important;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active {
+  height: 160px !important;
+  width: 160px !important;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:after {
+  content: "1 blocked sticker - Show Sticker";
+  color: var(--text-link);
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active:after {
+  content: none;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:hover:after {
+  text-decoration: underline;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] .lottieCanvas-1W7L-f,
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] .pngImage-33yLRP {
+  display: none;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .lottieCanvas-1W7L-f,
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .pngImage-33yLRP {
+  display: block;
+}
+
+/* Selected Discord Home button */
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    background-color: #404040;
+}
+
+/* Bot label */
+.px-10SIf7.botTag-2WPJ74, .botTagRegular-2HEhHi {
+    background-color: #404040;
+}
+
+/* upload popup colors */
+.uploadModal-2ifh8j .inner-3nWsbo, .theme-dark .uploadModal-2ifh8j, .theme-dark .footer-3mqk7D, .theme-dark .errorState-KkUH_2 {
+  background-color: #111111;
+}
+/* avatar panel */
+.container-3baos1{
+  background-color: #111111;
+  border-top: 1px solid #202020;
+}
+
+.container-1giJp5 {
+    background-color: #111111;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--background-modifier-accent);
+}
+
+/* User Panel Voice Channel Ping */
+.rtcConnectionStatusConnected-VRZDjy {
+  color: #3bfd1a;
+}
+
+.rtcConnectionQualityFine-2J6i8z .pingForeground-2uAOZ3 {
+  color: #3bfd1a;
+}
+
+/* emote selection */
+.inspector-3LQtX9{
+  background: #111111;
+}
+
+/*discover area */
+.scroller-1d5FgU{
+  background: #111111;
+  border-left: 1px solid #202020;
+}
+.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG{
+  background-color: rgba(59, 253, 26, 0.8);
+}
+/* Focused Search Box */
+.resultsGroup-r_nuzN {
+  background-color: #111111;
+}
+
+.theme-dark .option-96V44q.selected-rZcOL-, .header-1TKi98 {
+  background-color: #303030;
+}
+
+.container-3baos1, .container-3baos1 .avatar-SmRMf2{
+    margin-bottom: 0px; 
+    background-color: #111111;
+}
+
+.section-2gLsgF, .templatesList-2E6rTe, .theme-light .footer-2gL1pp {
+	background-color: #202020;
+}
+
+.theme-dark .option-96V44q:after, .theme-dark .option-96V44q:after {
+     background: none;
+     background: none;
+}
+
+/* window control buttons */
+.winButton-iRh8-Z, .themed-OHr7kt.item-PXvHYJ, .titleSecondary-3Dh_RZ, .navButton-2gQCx-, .unicodeShortcut-15J8Ck, .headerText-2F0828:hover, .layout-2DM8Md:hover, .privateChannelsHeaderContainer-3NB1K1:hover {
+	color: #c8c8c8;
+}
+
+.colorHeaderPrimary-26Jzh- {
+	color: #fff;
+}
+.peopleColumn-1wMU14 {
+  background:var(--background-primary) !important;
+}

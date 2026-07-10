@@ -1,0 +1,8 @@
+{
+	"connect_on_startup": false,
+	"log_level": "WARNING",
+	"time_per_file": false,
+	"details": "Working on {project}",
+    "state": "Editing {file} ({loc} lines)",
+    "project_name": ["folder_name"]
+}

@@ -1,0 +1,80 @@
+{
+  "IsEnabled": true,
+  "Pipelines": [
+    {
+      "Id": "fcce4b05-2174-4738-bb24-20f63d7dd11c",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ACAdapterConnectedAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation"
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Balance"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.RefreshRateAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": {
+            "Frequency": 165
+          }
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.DisplayBrightnessAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "Brightness": 50
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.AlwaysOnUsbAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "OnAlways"
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "ac4de828-0c7e-4756-ad0d-0345cefb2c8e",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ACAdapterDisconnectedAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation"
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Quiet"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.RefreshRateAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": {
+            "Frequency": 60
+          }
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.DeactivateGPUAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "RestartGPU"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.DisplayBrightnessAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "Brightness": 30
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.AlwaysOnUsbAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Off"
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "9328fe9d-964c-4d03-92d9-9345b6079a7d",
+      "IconName": null,
+      "Name": "Deactivate GPU",
+      "Trigger": null,
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.DeactivateGPUAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "KillApps"
+        }
+      ],
+      "IsExclusive": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\qBittorrent.ini",
+                "destination": "D:\\Utils\\Scoop\\persist\\qbittorrent\\profile\\qBittorrent\\config\\qBittorrent.ini"
+            },
+            {
+                "source": "src\\qBittorrent-data.ini",
+                "destination": "D:\\Utils\\Scoop\\persist\\qbittorrent\\profile\\qBittorrent\\config\\qBittorrent-data.ini"
+            }
+        ]
+    }
+]

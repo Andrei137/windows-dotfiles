@@ -1,0 +1,21 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src",
+                "destination": "D:\\Utils\\Windows-Dotfiles\\symlinks\\starship"
+            }
+        ]
+    },
+    {
+        "action": "env",
+        "params": [
+            {
+                "name": "STARSHIP_CONFIG",
+                "value": "D:\\Utils\\Windows-Dotfiles\\symlinks\\starship\\config.toml",
+                "default": "%USERPROFILE%\\.config\\starship.toml"
+            }
+        ]
+    }
+]

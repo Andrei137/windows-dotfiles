@@ -1,0 +1,19 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\icon_cache",
+                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LGHUB\\icon_cache"
+            },
+            {
+                "source": "src\\scripts",
+                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LGHUB\\scripts"
+            },
+            {
+                "source": "src\\settings.db",
+                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LGHUB\\settings.db"
+            }
+        ]
+    }
+]
