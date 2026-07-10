@@ -3,7 +3,7 @@
     "params": [
         {
             "type": "regedit",
-            "source": "IDM.reg",
+            "source": "backup\\IDM.reg",
             "destination": "HKEY_CURRENT_USER\\Software\\DownloadManager"
         }
     ]

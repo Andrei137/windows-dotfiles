@@ -1,3 +1,5 @@
 * text=auto
 *.ps1 text eol=lf
-dotfiles/.firefox/src/Restore[[:space:]]Firefox/*.html filter=lfs diff=lfs merge=lfs -text
+*.ini text eol=crlf
+dotfiles/.nvidia/backup/*.nip -text
+dotfiles/.firefox/backup/Restore[[:space:]]Firefox/*.html filter=lfs diff=lfs merge=lfs -text

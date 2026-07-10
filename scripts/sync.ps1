@@ -76,7 +76,7 @@ function Export-Filesystem {
 function Import-Regedit {
     param($Param)
 
-    $BackupFile = Join-Path $SourcePath "src\$($Param.source)"
+    $BackupFile = Join-Path $SourcePath $Param.source
 
     Write-Host "Backing up $($Param.destination) -> $BackupFile"
 
@@ -90,7 +90,7 @@ function Import-Regedit {
 function Export-Regedit {
     param($Param)
 
-    $BackupFile = Join-Path $SourcePath "src\$($Param.source)"
+    $BackupFile = Join-Path $SourcePath $Param.source
 
     if (-not (Test-Path $BackupFile)) {
         Write-Warning "Backup not found: $BackupFile"
