@@ -5,16 +5,10 @@ scoop bucket add extras
 scoop install extras/zebar
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
-```
-
 ## Sync
 Symlinks don't work, so the config is copied. This is an util to sync changes back to the repo
 ```powershell
-.\sync.ps1
+.\import.ps1
 ```
 
 ## Useful links

@@ -1,0 +1,9 @@
+[
+    {
+        "action": "admin",
+        "params": [
+            "%SCOOP%\\apps\\wiztree\\current\\WizTree.exe",
+            "%SCOOP%\\apps\\wiztree\\current\\WizTree64.exe"
+        ]
+    }
+]

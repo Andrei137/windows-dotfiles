@@ -4,10 +4,9 @@ I prefer using `scoop`, but any other method should work as well
 scoop install sublime-text
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
+## Default values
+```
+WAKATIME_HOME = %USERPROFILE%
 ```
 
 If `open_with` is kept in `settings.json`, the script will generate two `.reg` files, for adding and removing context menu

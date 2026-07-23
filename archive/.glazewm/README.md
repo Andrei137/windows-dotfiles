@@ -5,11 +5,5 @@ scoop bucket add extras
 scoop install extras/glazewm
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
-```
-
 ## Useful links
 - [Docs](https://github.com/glzr-io/glazewm)

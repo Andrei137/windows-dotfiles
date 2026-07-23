@@ -1,20 +1,10 @@
 [
     {
-        "action": "symlink",
-        "params": [
-            {
-                "source": "src",
-                "destination": "D:\\Utils\\Windows-Dotfiles\\symlinks\\wezterm"
-            }
-        ]
-    },
-    {
         "action": "env",
         "params": [
             {
                 "name": "WEZTERM_CONFIG_FILE",
-                "value": "D:\\Utils\\Windows-Dotfiles\\symlinks\\wezterm\\config.lua",
-                "default": "%USERPROFILE%\\.config\\wezterm\\wezterm.lua"
+                "value": "${MODULE_DIR}\\src\\config.lua"
             }
         ]
     },
@@ -22,7 +12,7 @@
         "action": "open_with",
         "params": {
             "name": "Wezterm",
-            "exe": "D:\\Utils\\Scoop\\apps\\wezterm\\current\\wezterm-gui.exe",
+            "exe": "%SCOOP%\\apps\\wezterm\\current\\wezterm-gui.exe",
             "flags": {
                 "folder": "start --cwd \\\"%V\\\"",
                 "empty_space": "start --cwd \\\"%V\\\""

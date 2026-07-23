@@ -5,10 +5,9 @@ scoop bucket add extras
 scoop install wezterm
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
+## Default values
+```
+WEZTERM_CONFIG_FILE = %USERPROFILE%\.config\wezterm\wezterm.lua
 ```
 
 If `regedit` is kept in `settings.json`, the script will generate two `.reg` files, for adding and removing context menu

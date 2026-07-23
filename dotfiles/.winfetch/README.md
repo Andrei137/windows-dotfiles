@@ -4,10 +4,9 @@ I prefer using `scoop`, but any other method should work as well
 scoop install winfetch
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
+## Default values
+```
+WINFETCH_CONFIG_PATH = %USERPROFILE%\.config\winfetch\config.ps1
 ```
 
 ## Useful links

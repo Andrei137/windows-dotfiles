@@ -1,50 +1,44 @@
 {
  "$id": "https://bitsum.com/json-schemas/2026-01-17-00/processlasso.schema.json",
  "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "appPowerProfileRuleOrder": [
+  "helldivers2.exe"
+ ],
+ "cpuAffinityRuleOrder": [
+  "helldivers2.exe"
+ ],
  "cpuModel": "Intel(R) Core(TM) Ultra 9 275HX",
  "description": "Rulesets for Process Lasso",
- "gpuAdapterPreferenceRuleOrder": [
-  "c:\\windows\\system32\\driverstore\\filerepository\\nvlt.inf_amd64_138f16e1d7ecfcb8\\display.nvcontainer\\nvdisplay.container.exe",
-  "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayermini64.exe",
-  "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayer64.exe",
-  "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayer64.exe",
-  "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayermini64.exe",
-  "d:\\games\\singleplayer\\stellar blade\\sb\\binaries\\win64\\sb-win64-shipping.exe",
-  "d:\\games\\launchers\\steam\\steam.exe",
-  "d:\\utils\\winget\\steam\\steamapps\\common\\helldivers 2\\bin\\helldivers2.exe"
+ "efficiencyModeRuleOrder": [
+  "helldivers2.exe"
+ ],
+ "gpuPriorityClassRuleOrder": [
+  "helldivers2.exe"
+ ],
+ "ioPriorityClassRuleOrder": [
+  "helldivers2.exe"
+ ],
+ "memoryPriorityRuleOrder": [
+  "helldivers2.exe"
+ ],
+ "priorityClassRuleOrder": [
+  "helldivers2.exe"
  ],
  "ruleSets": [
   {
-   "gpuAdapterPreference": "Power saving",
-   "processName": "c:\\windows\\system32\\driverstore\\filerepository\\nvlt.inf_amd64_138f16e1d7ecfcb8\\display.nvcontainer\\nvdisplay.container.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\games\\launchers\\steam\\steam.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\games\\singleplayer\\stellar blade\\sb\\binaries\\win64\\sb-win64-shipping.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayer64.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\utils\\scoop\\apps\\potplayer\\260401\\potplayermini64.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayer64.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\utils\\scoop\\apps\\potplayer\\current\\potplayermini64.exe"
-  },
-  {
-   "gpuAdapterPreference": "High performance",
-   "processName": "d:\\utils\\winget\\steam\\steamapps\\common\\helldivers 2\\bin\\helldivers2.exe"
+   "appPowerProfile": "Bitsum Highest Performance",
+   "cpuAffinity": "1-23",
+   "cpuAffinityDelay": 0,
+   "efficiencyMode": 0,
+   "gpuPriority": "High",
+   "ioPriority": "High",
+   "ioPriorityEnforcedByRegistry": false,
+   "memoryPriority": "Normal",
+   "memoryPriorityEnforcedByRegistry": false,
+   "performanceMode": true,
+   "priorityClass": "High",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "helldivers2.exe"
   }
  ],
  "title": "Process Lasso Rules"

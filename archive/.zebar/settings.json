@@ -1,6 +1,6 @@
 [
     {
-        "action": "write",
+        "action": "sync",
         "params": [
             {
                 "source": "src\\theme",

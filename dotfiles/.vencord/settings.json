@@ -4,11 +4,11 @@
         "params": [
             {
                 "source": "src\\settings",
-                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Vencord\\settings"
+                "destination": "%APPDATA%\\Vencord\\settings"
             },
             {
                 "source": "src\\themes",
-                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Vencord\\themes"
+                "destination": "%APPDATA%\\Vencord\\themes"
             }
         ]
     }

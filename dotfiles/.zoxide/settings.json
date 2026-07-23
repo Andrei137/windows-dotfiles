@@ -1,0 +1,11 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\db.zo",
+                "destination": "%LOCALAPPDATA%\\zoxide\\db.zo"
+            }
+        ]
+    }
+]

@@ -7,14 +7,5 @@
                 "destination": "%USERPROFILE%\\.wslconfig"
             }
         ]
-    },
-    {
-        "action": "symlink",
-        "params": [
-            {
-                "source": "src\\wslg_config.txt",
-                "destination": "%USERPROFILE%\\.wslgconfig"
-            }
-        ]
     }
 ]

@@ -4,10 +4,9 @@ I prefer using `scoop`, but any other method should work as well
 scoop install starship
 ```
 
-## Setup
-Make sure to edit `settings.json` first
-```powershell
-.\setup.ps1
+## Default values
+```
+STARSHIP_CONFIG = %USERPROFILE%\.config\starship.toml
 ```
 
 ## Useful links

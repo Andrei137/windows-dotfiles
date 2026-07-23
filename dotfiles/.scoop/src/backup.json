@@ -1,385 +1,406 @@
 {
+    "apps": [
+        {
+            "Name": "7zip",
+            "Info": "",
+            "Updated": "2026-07-10T05:18:13.2995667+03:00",
+            "Source": "main",
+            "Version": "26.02"
+        },
+        {
+            "Name": "aria2",
+            "Info": "",
+            "Updated": "2026-05-12T13:11:31.3193963+03:00",
+            "Source": "main",
+            "Version": "1.37.0-1"
+        },
+        {
+            "Name": "bat",
+            "Info": "",
+            "Updated": "2026-05-12T13:11:32.8592499+03:00",
+            "Source": "main",
+            "Version": "0.26.1"
+        },
+        {
+            "Name": "caffeine",
+            "Info": "",
+            "Updated": "2026-07-22T03:45:22.7169314+03:00",
+            "Source": "extras",
+            "Version": "1.98"
+        },
+        {
+            "Name": "ddu",
+            "Info": "",
+            "Updated": "2026-05-31T13:52:51.6418224+03:00",
+            "Source": "extras",
+            "Version": "18.1.5.4"
+        },
+        {
+            "Name": "eza",
+            "Info": "",
+            "Updated": "2026-07-10T05:18:15.1172612+03:00",
+            "Source": "main",
+            "Version": "0.23.5"
+        },
+        {
+            "Name": "fd",
+            "Info": "",
+            "Updated": "2026-05-12T13:11:36.4309714+03:00",
+            "Source": "main",
+            "Version": "10.4.2"
+        },
+        {
+            "Name": "firefox",
+            "Info": "",
+            "Updated": "2026-07-22T03:46:51.1240955+03:00",
+            "Source": "extras",
+            "Version": "153.0"
+        },
+        {
+            "Name": "fzf",
+            "Info": "",
+            "Updated": "2026-07-21T15:13:52.4340795+03:00",
+            "Source": "main",
+            "Version": "0.74.1"
+        },
+        {
+            "Name": "git",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:10.9243416+03:00",
+            "Source": "main",
+            "Version": "2.55.0.3"
+        },
+        {
+            "Name": "hwinfo",
+            "Info": "",
+            "Updated": "2026-07-10T05:18:37.0560204+03:00",
+            "Source": "extras",
+            "Version": "8.50-6020"
+        },
+        {
+            "Name": "hwmonitor",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:12.1981255+03:00",
+            "Source": "extras",
+            "Version": "1.65.1"
+        },
+        {
+            "Name": "iconview",
+            "Info": "",
+            "Updated": "2026-05-18T00:52:42.0846944+03:00",
+            "Source": "extras",
+            "Version": "3.02"
+        },
+        {
+            "Name": "innounp",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:12.7944053+03:00",
+            "Source": "main",
+            "Version": "2.67.11"
+        },
+        {
+            "Name": "JetBrainsMono-NF",
+            "Info": "",
+            "Updated": "2026-05-19T16:54:21.9930409+03:00",
+            "Source": "nerd-fonts",
+            "Version": "3.4.0"
+        },
+        {
+            "Name": "lenovolegiontoolkit",
+            "Info": "",
+            "Updated": "2026-05-18T00:22:32.176921+03:00",
+            "Source": "extras",
+            "Version": "2.26.1"
+        },
+        {
+            "Name": "less",
+            "Info": "",
+            "Updated": "2026-06-07T20:55:27.3580613+03:00",
+            "Source": "main",
+            "Version": "704"
+        },
+        {
+            "Name": "lockhunter",
+            "Info": "",
+            "Updated": "2026-05-18T12:53:07.9176537+03:00",
+            "Source": "extras",
+            "Version": "3.4.3"
+        },
+        {
+            "Name": "ludusavi",
+            "Info": "",
+            "Updated": "2026-05-12T13:12:29.7751618+03:00",
+            "Source": "extras",
+            "Version": "0.31.0"
+        },
+        {
+            "Name": "motrix-next",
+            "Info": "",
+            "Updated": "2026-07-21T15:16:26.0346487+03:00",
+            "Source": "extras",
+            "Version": "3.9.6"
+        },
+        {
+            "Name": "nvpi",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:13.9122849+03:00",
+            "Source": "nvpi-r",
+            "Version": "3.0.2.2"
+        },
+        {
+            "Name": "parsec",
+            "Info": "",
+            "Updated": "2026-07-10T05:18:39.4908546+03:00",
+            "Source": "extras",
+            "Version": "150-104a"
+        },
+        {
+            "Name": "playnite",
+            "Info": "",
+            "Updated": "2026-05-31T13:51:30.9922524+03:00",
+            "Source": "extras",
+            "Version": "10.56"
+        },
+        {
+            "Name": "potplayer",
+            "Info": "",
+            "Updated": "2026-07-10T05:18:53.8588636+03:00",
+            "Source": "extras",
+            "Version": "260622"
+        },
+        {
+            "Name": "pwsh",
+            "Info": "",
+            "Updated": "2026-07-21T15:15:34.9283235+03:00",
+            "Source": "main",
+            "Version": "7.6.4"
+        },
+        {
+            "Name": "qbittorrent",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:04.8948787+03:00",
+            "Source": "extras",
+            "Version": "5.2.3"
+        },
+        {
+            "Name": "revouninstaller",
+            "Info": "",
+            "Updated": "2026-05-18T00:56:58.1010786+03:00",
+            "Source": "extras",
+            "Version": "2.7.0"
+        },
+        {
+            "Name": "ripgrep",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:15.1585688+03:00",
+            "Source": "main",
+            "Version": "15.2.0"
+        },
+        {
+            "Name": "rtss",
+            "Info": "",
+            "Updated": "2026-05-20T03:02:33.6176422+03:00",
+            "Source": "extras",
+            "Version": "7.3.7"
+        },
+        {
+            "Name": "rufus",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:06.7308498+03:00",
+            "Source": "extras",
+            "Version": "4.15"
+        },
+        {
+            "Name": "scoop-completion",
+            "Info": "",
+            "Updated": "2026-05-12T13:12:48.5763125+03:00",
+            "Source": "extras",
+            "Version": "0.3.0"
+        },
+        {
+            "Name": "scoop-search",
+            "Info": "",
+            "Updated": "2026-05-19T15:30:02.097941+03:00",
+            "Source": "main",
+            "Version": "2.1.0"
+        },
+        {
+            "Name": "snappy-driver-installer-origin",
+            "Info": "",
+            "Updated": "2026-05-19T16:45:16.2103647+03:00",
+            "Source": "extras",
+            "Version": "1.18.0.830"
+        },
+        {
+            "Name": "starship",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:08.6571134+03:00",
+            "Source": "main",
+            "Version": "1.26.0"
+        },
+        {
+            "Name": "steam-achievement-manager",
+            "Info": "",
+            "Updated": "2026-05-19T20:49:00.9556381+03:00",
+            "Source": "games",
+            "Version": "7.0.41"
+        },
+        {
+            "Name": "stremio",
+            "Info": "",
+            "Updated": "2026-07-21T15:14:42.6665571+03:00",
+            "Source": "extras",
+            "Version": "4.4.183"
+        },
+        {
+            "Name": "sublime-text",
+            "Info": "",
+            "Updated": "2026-06-10T12:05:40.8135642+03:00",
+            "Source": "extras",
+            "Version": "4-4200"
+        },
+        {
+            "Name": "sudo",
+            "Info": "",
+            "Updated": "2026-05-18T00:45:25.131498+03:00",
+            "Source": "main",
+            "Version": "0.2020.01.26"
+        },
+        {
+            "Name": "taiga",
+            "Info": "",
+            "Updated": "2026-05-12T13:13:03.756969+03:00",
+            "Source": "extras",
+            "Version": "1.4.1"
+        },
+        {
+            "Name": "teamviewer",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:18.7443954+03:00",
+            "Source": "extras",
+            "Version": "15.79.4"
+        },
+        {
+            "Name": "telegram",
+            "Info": "",
+            "Updated": "2026-07-22T03:46:07.2997539+03:00",
+            "Source": "extras",
+            "Version": "7.0.4"
+        },
+        {
+            "Name": "unigetui",
+            "Info": "",
+            "Updated": "2026-07-21T15:15:11.5892757+03:00",
+            "Source": "extras",
+            "Version": "2026.2.5"
+        },
+        {
+            "Name": "unlocker",
+            "Info": "",
+            "Updated": "2026-05-18T00:50:14.511935+03:00",
+            "Source": "extras",
+            "Version": "1.9.0"
+        },
+        {
+            "Name": "vcxsrv",
+            "Info": "",
+            "Updated": "2026-05-12T13:13:08.501622+03:00",
+            "Source": "extras",
+            "Version": "21.1.16.1"
+        },
+        {
+            "Name": "vivetool",
+            "Info": "",
+            "Updated": "2026-06-10T10:28:22.4483041+03:00",
+            "Source": "main",
+            "Version": "0.3.4"
+        },
+        {
+            "Name": "wezterm",
+            "Info": "",
+            "Updated": "2026-05-12T13:13:13.9124312+03:00",
+            "Source": "extras",
+            "Version": "20240203-110809-5046fc22"
+        },
+        {
+            "Name": "winaero-tweaker",
+            "Info": "",
+            "Updated": "2026-05-18T00:51:54.7769935+03:00",
+            "Source": "extras",
+            "Version": "1.65.0.0"
+        },
+        {
+            "Name": "winfetch",
+            "Info": "",
+            "Updated": "2026-05-12T13:13:14.394171+03:00",
+            "Source": "main",
+            "Version": "2.5.1"
+        },
+        {
+            "Name": "winrar",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:31.4578556+03:00",
+            "Source": "extras",
+            "Version": "7.23"
+        },
+        {
+            "Name": "winyl",
+            "Info": "",
+            "Updated": "2026-05-12T13:13:15.4954569+03:00",
+            "Source": "extras",
+            "Version": "3.3.1"
+        },
+        {
+            "Name": "wiztree",
+            "Info": "",
+            "Updated": "2026-05-18T00:35:47.4224796+03:00",
+            "Source": "extras",
+            "Version": "4.31"
+        },
+        {
+            "Name": "zoxide",
+            "Info": "",
+            "Updated": "2026-07-10T05:19:32.6314596+03:00",
+            "Source": "main",
+            "Version": "0.10.0"
+        }
+    ],
     "buckets": [
         {
             "Name": "main",
-            "Source": "D:\\Utils\\Scoop\\buckets\\main",
-            "Updated": "2026-07-10T05:17:10.6907278+03:00",
-            "Manifests": 1608
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2026-07-21T23:46:15+03:00",
+            "Manifests": 1612
         },
         {
             "Name": "extras",
-            "Source": "D:\\Utils\\Scoop\\buckets\\extras",
-            "Updated": "2026-07-10T05:17:21.2463006+03:00",
-            "Manifests": 2343
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2026-07-21T23:45:06+03:00",
+            "Manifests": 2348
         },
         {
             "Name": "versions",
-            "Source": "D:\\Utils\\Scoop\\buckets\\versions",
-            "Updated": "2026-07-10T05:17:12.2747555+03:00",
-            "Manifests": 592
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2026-07-22T00:36:31+03:00",
+            "Manifests": 593
         },
         {
             "Name": "nerd-fonts",
-            "Source": "D:\\Utils\\Scoop\\buckets\\nerd-fonts",
-            "Updated": "2026-07-10T05:17:11.1778186+03:00",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2026-07-15T23:15:08+03:00",
             "Manifests": 367
         },
         {
             "Name": "games",
-            "Source": "D:\\Utils\\Scoop\\buckets\\games",
-            "Updated": "2026-07-10T05:17:11.9204499+03:00",
-            "Manifests": 412
+            "Source": "https://github.com/Calinou/scoop-games",
+            "Updated": "2026-07-22T00:34:35+03:00",
+            "Manifests": 414
         },
         {
             "Name": "nvpi-r",
-            "Source": "D:\\Utils\\Scoop\\buckets\\nvpi-r",
-            "Updated": "2026-07-10T05:17:12.5615115+03:00",
+            "Source": "https://github.com/AmirulAndalib/nvpi-r-auto",
+            "Updated": "2026-07-17T04:26:51+03:00",
             "Manifests": 2
-        }
-    ],
-    "apps": [
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:13.2995667+03:00",
-            "Source": "main",
-            "Version": "26.02",
-            "Name": "7zip"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:11:31.3193963+03:00",
-            "Source": "main",
-            "Version": "1.37.0-1",
-            "Name": "aria2"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:11:32.8592499+03:00",
-            "Source": "main",
-            "Version": "0.26.1",
-            "Name": "bat"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-31T13:52:51.6418224+03:00",
-            "Source": "extras",
-            "Version": "18.1.5.4",
-            "Name": "ddu"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:15.1172612+03:00",
-            "Source": "main",
-            "Version": "0.23.5",
-            "Name": "eza"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:11:36.4309714+03:00",
-            "Source": "main",
-            "Version": "10.4.2",
-            "Name": "fd"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:22:22.7912006+03:00",
-            "Source": null,
-            "Version": "151.0",
-            "Name": "firefox"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:16.677251+03:00",
-            "Source": "main",
-            "Version": "0.74.0",
-            "Name": "fzf"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:37.0560204+03:00",
-            "Source": "extras",
-            "Version": "8.50-6020",
-            "Name": "hwinfo"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-06-14T05:42:14.1013617+03:00",
-            "Source": "extras",
-            "Version": "1.64",
-            "Name": "hwmonitor"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:52:42.0846944+03:00",
-            "Source": "extras",
-            "Version": "3.02",
-            "Name": "iconview"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T12:53:07.1154666+03:00",
-            "Source": "main",
-            "Version": "2.67.9",
-            "Name": "innounp"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-19T16:54:21.9930409+03:00",
-            "Source": "nerd-fonts",
-            "Version": "3.4.0",
-            "Name": "JetBrainsMono-NF"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:22:32.176921+03:00",
-            "Source": "extras",
-            "Version": "2.26.1",
-            "Name": "lenovolegiontoolkit"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-06-07T20:55:27.3580613+03:00",
-            "Source": "main",
-            "Version": "704",
-            "Name": "less"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T12:53:07.9176537+03:00",
-            "Source": "extras",
-            "Version": "3.4.3",
-            "Name": "lockhunter"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:12:29.7751618+03:00",
-            "Source": "extras",
-            "Version": "0.31.0",
-            "Name": "ludusavi"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:38.3913066+03:00",
-            "Source": "nvpi-r",
-            "Version": "3.0.2.1",
-            "Name": "nvpi"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:39.4908546+03:00",
-            "Source": "extras",
-            "Version": "150-104a",
-            "Name": "parsec"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-31T13:51:30.9922524+03:00",
-            "Source": "extras",
-            "Version": "10.56",
-            "Name": "playnite"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:18:53.8588636+03:00",
-            "Source": "extras",
-            "Version": "260622",
-            "Name": "potplayer"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:20:22.0138666+03:00",
-            "Source": "main",
-            "Version": "7.6.3",
-            "Name": "pwsh"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:04.8948787+03:00",
-            "Source": "extras",
-            "Version": "5.2.3",
-            "Name": "qbittorrent"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:56:58.1010786+03:00",
-            "Source": "extras",
-            "Version": "2.7.0",
-            "Name": "revouninstaller"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:12:46.4505671+03:00",
-            "Source": "main",
-            "Version": "15.1.0",
-            "Name": "ripgrep"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-20T03:02:33.6176422+03:00",
-            "Source": "extras",
-            "Version": "7.3.7",
-            "Name": "rtss"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:06.7308498+03:00",
-            "Source": "extras",
-            "Version": "4.15",
-            "Name": "rufus"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:12:48.5763125+03:00",
-            "Source": "extras",
-            "Version": "0.3.0",
-            "Name": "scoop-completion"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-19T15:30:02.097941+03:00",
-            "Source": "main",
-            "Version": "2.1.0",
-            "Name": "scoop-search"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-19T16:45:16.2103647+03:00",
-            "Source": "extras",
-            "Version": "1.18.0.830",
-            "Name": "snappy-driver-installer-origin"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:08.6571134+03:00",
-            "Source": "main",
-            "Version": "1.26.0",
-            "Name": "starship"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-19T20:49:00.9556381+03:00",
-            "Source": "games",
-            "Version": "7.0.41",
-            "Name": "steam-achievement-manager"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-19T16:44:12.4184374+03:00",
-            "Source": "extras",
-            "Version": "4.4.182",
-            "Name": "stremio"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-06-10T12:05:40.8135642+03:00",
-            "Source": "extras",
-            "Version": "4-4200",
-            "Name": "sublime-text"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:45:25.131498+03:00",
-            "Source": "main",
-            "Version": "0.2020.01.26",
-            "Name": "sudo"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:13:03.756969+03:00",
-            "Source": "extras",
-            "Version": "1.4.1",
-            "Name": "taiga"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:18.7443954+03:00",
-            "Source": "extras",
-            "Version": "15.79.4",
-            "Name": "teamviewer"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-06-14T05:42:28.9554461+03:00",
-            "Source": "extras",
-            "Version": "6.9.3",
-            "Name": "telegram"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:28.9476154+03:00",
-            "Source": "extras",
-            "Version": "2026.2.2",
-            "Name": "unigetui"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:50:14.511935+03:00",
-            "Source": "extras",
-            "Version": "1.9.0",
-            "Name": "unlocker"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:13:08.501622+03:00",
-            "Source": "extras",
-            "Version": "21.1.16.1",
-            "Name": "vcxsrv"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-06-10T10:28:22.4483041+03:00",
-            "Source": "main",
-            "Version": "0.3.4",
-            "Name": "vivetool"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:13:13.9124312+03:00",
-            "Source": "extras",
-            "Version": "20240203-110809-5046fc22",
-            "Name": "wezterm"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:51:54.7769935+03:00",
-            "Source": "extras",
-            "Version": "1.65.0.0",
-            "Name": "winaero-tweaker"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:13:14.394171+03:00",
-            "Source": "main",
-            "Version": "2.5.1",
-            "Name": "winfetch"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:31.4578556+03:00",
-            "Source": "extras",
-            "Version": "7.23",
-            "Name": "winrar"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-12T13:13:15.4954569+03:00",
-            "Source": "extras",
-            "Version": "3.3.1",
-            "Name": "winyl"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-05-18T00:35:47.4224796+03:00",
-            "Source": "extras",
-            "Version": "4.31",
-            "Name": "wiztree"
-        },
-        {
-            "Info": "",
-            "Updated": "2026-07-10T05:19:32.6314596+03:00",
-            "Source": "main",
-            "Version": "0.10.0",
-            "Name": "zoxide"
         }
     ]
 }
