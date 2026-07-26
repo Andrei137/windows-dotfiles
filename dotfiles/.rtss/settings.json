@@ -1,0 +1,19 @@
+[
+    {
+        "action": "symlink",
+        "params": [
+            {
+                "source": "src\\Profiles",
+                "destination": "%SCOOP%\\persist\\rtss\\Profiles"
+            },
+            {
+                "source": "src\\Plugins\\Client\\HotkeyHandler.cfg",
+                "destination": "%SCOOP%\\persist\\rtss\\Plugins\\Client\\HotkeyHandler.cfg"
+            },
+            {
+                "source": "src\\Plugins\\Client\\OverlayEditor.cfg",
+                "destination": "%SCOOP%\\persist\\rtss\\Plugins\\Client\\OverlayEditor.cfg"
+            }
+        ]
+    }
+]

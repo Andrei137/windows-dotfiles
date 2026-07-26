@@ -4,11 +4,11 @@
         "params": [
             {
                 "source": "src\\installs.ini",
-                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Mozilla\\Firefox\\installs.ini"
+                "destination": "%APPDATA%\\Mozilla\\Firefox\\installs.ini"
             },
             {
                 "source": "src\\profiles.ini",
-                "destination": "C:\\Users\\Andrei\\AppData\\Roaming\\Mozilla\\Firefox\\profiles.ini"
+                "destination": "%APPDATA%\\Mozilla\\Firefox\\profiles.ini"
             },
         ]
     }

@@ -4,11 +4,11 @@
         "params": [
             {
                 "source": "src\\automation.json",
-                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LenovoLegionToolkit\\automation.json"
+                "destination": "%LOCALAPPDATA%\\LenovoLegionToolkit\\automation.json"
             },
             {
                 "source": "src\\settings.json",
-                "destination": "C:\\Users\\Andrei\\AppData\\Local\\LenovoLegionToolkit\\settings.json"
+                "destination": "%LOCALAPPDATA%\\LenovoLegionToolkit\\settings.json"
             }
         ]
     }

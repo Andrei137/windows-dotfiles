@@ -92,17 +92,41 @@ function Export-Regedit {
 
     $BackupFile = Join-Path $SourcePath $Param.source
 
-    if (-not (Test-Path $BackupFile)) {
-        Write-Warning "Backup not found: $BackupFile"
+    Write-Host "Backing up $($Param.destination) -> $BackupFile"
+
+    & reg.exe export "$($Param.destination)" "$BackupFile" /y | Out-Null
+
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "Failed to export '$($Param.destination)'."
         return
     }
 
-    Write-Host "Restoring $BackupFile"
+    if ($Param.exclude) {
+        $lines = Get-Content $BackupFile
 
-    & reg.exe import "$BackupFile" | Out-Null
+        $output = [System.Collections.Generic.List[string]]::new()
+        $skip = $false
 
-    if ($LASTEXITCODE -ne 0) {
-        Write-Warning "Failed to import '$BackupFile'."
+        foreach ($line in $lines) {
+            if ($line -match '^\[(.+)\]$') {
+                $key = $Matches[1]
+
+                $skip = $false
+                foreach ($exclude in $Param.exclude) {
+                    if ($key -like "*\$exclude" -or $key -like "*\$exclude\*") {
+                        Write-Host "Excluding registry key: $key"
+                        $skip = $true
+                        break
+                    }
+                }
+            }
+
+            if (-not $skip) {
+                $output.Add($line)
+            }
+        }
+
+        Set-Content $BackupFile $output -Encoding Unicode
     }
 }
 

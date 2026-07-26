@@ -33,6 +33,17 @@ local function get_cwd(cwd_str, is_wsl)
 	return url_decode(cwd)
 end
 
+local function wsl_to_windows(cwd)
+	if not cwd then
+		return cwd
+	end
+	local drive, path = cwd:match("^/mnt/([a-zA-Z])/(.*)")
+	if drive then
+		return drive:upper() .. ":\\" .. path:gsub("/", "\\")
+	end
+	return "\\\\wsl.localhost\\Ubuntu" .. cwd:gsub("/", "\\")
+end
+
 local function keep_domain(pane)
 	local cwd_str, is_wsl = get_details(pane)
 	return is_wsl and { DomainName = "WSL:Ubuntu" } or "DefaultDomain", get_cwd(cwd_str, is_wsl)
@@ -40,7 +51,11 @@ end
 
 local function reverse_domain(pane)
 	local cwd_str, is_wsl = get_details(pane)
-	return is_wsl and "DefaultDomain" or { DomainName = "WSL:Ubuntu" }, get_cwd(cwd_str, is_wsl)
+	local cwd = get_cwd(cwd_str, is_wsl)
+	if is_wsl then
+		return "DefaultDomain",  wsl_to_windows(cwd)
+	end
+	return { DomainName = "WSL:Ubuntu" }, cwd
 end
 
 function M.apply(wezterm, config)

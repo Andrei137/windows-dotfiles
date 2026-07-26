@@ -1,21 +1,14 @@
 [
     {
-        "action": "sync",
+        "action": "symlink",
         "params": [
             {
-                "type": "filesystem",
                 "source": "src\\packages",
-                "destination": "%SCOOP%\\apps\\sublime-text\\current\\Data\\Installed Packages"
+                "destination": "%SCOOP%\\persist\\sublime-text\\Data\\Installed Packages"
             },
             {
-                "type": "filesystem",
-                "source": "src\\local",
-                "destination": "%SCOOP%\\apps\\sublime-text\\current\\Data\\Local"
-            },
-            {
-                "type": "filesystem",
                 "source": "src\\config",
-                "destination": "%SCOOP%\\apps\\sublime-text\\current\\Data\\Packages\\User"
+                "destination": "%SCOOP%\\persist\\sublime-text\\Data\\Packages\\User"
             }
         ]
     },

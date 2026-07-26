@@ -1,10 +1,9 @@
 local wezterm = require("wezterm")
 
 local function add_to_path(folder)
-  local files = (folder == "utils" and "init" or "?") .. ".lua"
-  local path = wezterm.config_dir .. "/" .. folder .. "/" .. files
-  package.path = package.path .. ";" .. path
+  package.path = package.path .. ";" .. wezterm.config_dir .. "/" .. folder .. "/?.lua"
 end
+
 add_to_path("core");
 add_to_path("plugins");
 

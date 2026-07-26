@@ -3,7 +3,7 @@ param(
     [string]$Action = "export"
 )
 
-$File = "$PSScriptRoot\src\backup.json"
+$File = "$PSScriptRoot\backup\packages.json"
 
 if ($Action -eq "import") {
     scoop import "$File"
