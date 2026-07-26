@@ -1,4 +1,18 @@
+# Auto-detect text files
 * text=auto
-*.ps1 text eol=lf
-dotfiles/.firefox/backup/Restore[[:space:]]Firefox/*.html filter=lfs diff=lfs merge=lfs -text
 
+# Windows-native scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# PowerShell
+*.ps1 text eol=lf
+
+# Windows-generated configuration files
+*.ini text eol=crlf
+*.cfg text eol=crlf
+*.reg text eol=crlf
+*.nip text eol=crlf
+
+# Firefox backup
+dotfiles/.firefox/backup/Restore[[:space:]]Firefox/*.html filter=lfs diff=lfs merge=lfs -text
